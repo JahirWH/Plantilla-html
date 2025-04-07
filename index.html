@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio">
+    <meta name="keywords" content="portafolio para uso libre">
+    <meta name="autor" content="autor">
+    <link rel="icon" type="image/ico" href="ico.ico">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="cs.css">
+    <script src="js.js" defer></script>
+  </head>
+
+
+  <body>
+    <div id="loadbar" class="loader-back">
+      <span class="loader"></span>
+    </div>
+    <header class="hero">
+
+          <div class="title txt1">
+            <a onclick="index()">Index</a>
+          </div> 
+           <div class="title txt2">
+            <a onclick="about()" >About/info</a> 
+          </div>
+           <div class="title txt3">
+            <a  onclick="certifications()">Imagenes</a>
+          </div>
+
+           <div class="title txt4">
+            <a> Otros</a>
+
+            <a>@2025</a>
+          </div>
+
+
+
+
+      <div class="container">
+
+        <div class="intro" style='display: block;' id="principal">
+
+          <div class="code-box">
+            <div class="box">
+
+              <div class="box_1">
+                <div class="box_1_div" onclick="window.open('#none', '_blank')">
+                  <img class="img" src="./img/website.svg">
+                  <div class="div_info">
+                    <p>Pagina</p>
+                  </div>
+                </div>
+                <div class="box_1_div" onclick="window.open('#link', '_blank' )">
+                  <img class="img" src="./img/doc.svg">
+                  <div class="div_info">
+                    <p>Documento</p>
+                  </div>
+                </div>
+                <div class="box_1_div" onclick="enviarCorreo()">
+                  <img class="img" src="./img/send.svg">
+                  <div class="div_info">
+                    <p>Contacto</p>
+                  </div>
+                </div>
+              </div>
+              <section id="skills" class="skills">
+                <h3> Otros</h3>
+                <p class="len"> Click para preview</p>
+                <div class="contenedor">
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar1">75%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style="color:#3584E4;">Numero</p>
+                  </div>
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar2">60%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style=" color:#c6b008;"> Numero</p>
+                  </div>
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar3">45%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style="color:#FD8C20;">Numero</p>
+                  </div>
+                </div>
+                <div class="contenedor">
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar4">42%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style="color:#11B003">Numero</p>
+                  </div>
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar5">95%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style="color:#A56DE2;">Numero</p>
+                  </div>
+                  <div class="bloque">
+                    <div class="bar">
+                      <span id="bar6">70%</span>
+                      <span class="num"></span>
+                    </div>
+                    <p class="name" style="color:#1ABC9C;">PHP</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="about-list">
+              <span onclick="rotarDivs()" class="btn"></span>
+              <div class="contenido-perfil" id="perfil_txt1">
+
+                    
+                <h4>Resumen</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+              </div>
+              <div class="contenido-perfil" style="display: none" id="perfil_txt2">
+                <div id="info_text">
+                  <h4>Mas info</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="contenido-perfil" style="display: none" id="perfil_txt3">
+                <div class="frameworks">
+                  <h4>More</h4>
+                  <ul>
+                    <li>Ejemplo</li>
+                    <li>Ejemplo</li>
+                    <li>Ejemplo</li>
+                  </ul>
+                </div>
+                <div class="distros">
+                  <h4>Ejemplo</h4>
+                 
+                  <section class="grafica">
+                    <div class="botones">
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+                      <button onclick="cambiarDistro('Titulo ejemplo', './img/zorin.svg', 'info', 'Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi minima, perferendis est nobis vero ipsum, nulla soluta re')">
+                        <img src="img/zorin.svg">
+                      </button>
+                      
+                    </div>
+                    
+                          <div id="active" style="display: none;" class="grafica_div">
+                  <div onclick="cerrar()" class="close">
+                    <img src="./img/c.svg">
+                  </div>
+                  <div class="grafica_div1">
+                    <div id="img" class="grafica_imagen">
+                      <img src="./img/elementary.svg" alt="Imagen de Elementary OS">
+                    </div>
+                    <div id="text" class="grafica_texto">
+                      <p>Ejemplo</p>
+                      <p>Descripcion ejemplo</p>
+                    </div>
+                  </div>
+                  <div class="grafica_div2">
+                    <div id="text_info" class="grafica_info">
+                      <p>Texto ejemplo</p>
+                      <img src="./img/e.png">
+                    </div>
+                  </div>
+                </div>
+                    
+
+               
+                    
+                </div>
+
+
+              
+                </section>
+
+                <div class="idiomas">
+                  <h4>Ejemplo</h4>
+                    <ul>
+                        <li>txt1
+                            <div class="nativ">
+                                <p>txt2</p>
+                            </div>
+                        </li>
+                          <li>txt1
+                            <div class="nativ">
+                                <p>txt2</p>
+                            </div>
+                        </li>
+                          <li>txt1
+                            <div class="nativ">
+                                <p>txt2</p>
+                            </div>
+                        </li>
+                          <li>txt1
+                            <div class="nativ">
+                                <p>txt2</p>
+                            </div>
+                        </li>
+                    </ul>
+             
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Divisor -->
+
+
+  
+
+  <!-- Divisor -->
+
+  
+    <section style='display: none;' id="certifications" class="certificados">
+      <div class="div-cer">
+        <div class="div-title">
+          <h2> Certificaciones y cursos</h2>
+          <p class="len">click preview</p>
+        </div>
+        <ul>
+          <li class="li-cer">
+            <div class="li-div">
+              <h3> Certificado 1</h3>
+            </div>
+            <img class="zoom-image" src="./img/img.jpg" alt="Certificación 1" loading="lazy">
+          </li>
+          <li class="li-cer">
+            <div class="li-div">
+              <h3> Certificado 2</h3>
+            </div>
+            <img class="zoom-image" src="./img/img.jpg" alt="Certificación 1"     >
+          </li>
+        </ul>
+        <ul>
+          <li class="li-cer">
+            <div class="li-div">
+              <h3> Certificado 3</h3>
+            </div>
+            <img class="zoom-image" src="./img/img2.jpg" alt="Certificación 1" loading="lazy">
+          </li>
+          <li class="li-cer">
+            <div class="li-div">
+              <h3> Certificado 4</h3>
+            </div>
+            <img class="zoom-image" src="./img/img2.jpg" alt="Certificación 1" loading="lazy">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+    
+
+<!-- Divisor -->
+
+<div style="display: none;" id="about" class="abt_cont">
+        <div class="abt_title">
+            <a>about</a>
+        </div>
+        <div class="abt_cont_div">
+            <div class="abt_contact">
+                <span>
+                    <img src="./img/contact.svg">
+                    <h4>labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud</h4>
+                </span>
+                <h5>🔗Links</h5>
+
+                <ul>
+                    <li><a href="#n">Enlace </a></li>
+                    <li><a href="#n">Enlace </a></li>
+                    <li><a href="#n">Enlace </a></li>
+                </ul>
+
+                <div class="abt_web">
+
+                    <button onclick="text()" class="btn"></button>
+                    <h5>Info </h5>
+                    <div>
+                        <p id="text1" style="display: block" >Texto Ejemplo 1</p>
+                        <p id="text2" style="display:none">Texto ejemplo 2</p>
+                        
+                    </div>
+                    <div class="abt_final">
+                    <h4>Caracteristicas</h4>
+                        <ul>
+                        <li>✅ Caracteristica aqui</li>
+                        <li>✅ Caracteristica aqui</li>
+                        <li>✅ Caracteristica aqui</li>
+          
+                        </ul>
+                        
+                        </div>
+                        
+                </div>
+                <div class="old">
+                            <a href="#" >Otras webs aqui</a> 
+                        <p>Lorem dolore magna aliqua. Ut enim ad mini</p>
+                                    
+                        </div>
+            </div>
+            
+            <div class="abt_info">
+                       <h5>Info</h5>
+
+                <ul class="abt_info_ul">
+                    <li>
+                        <h4>Info</h4>
+                       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </li>
+            
+                    <li>
+                          <li>
+                        <h4>Info</h4>
+                       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </li>
+            
+                 
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+<!-- divs inales -->
+
+      </div>
+    </div>
+  
+
+  </body>
+</html>
